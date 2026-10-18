@@ -1,0 +1,27 @@
+title: SITE TITLE
+description: Personal stories and notes from my life.
+baseurl: "/REPO-NAME"   # your repo name, with the leading slash. Use "" if the repo is named username.github.io
+
+# Top navigation. To add a folder, add a line here and create a matching index.md in that folder.
+nav:
+  - title: Home
+    url: /
+  - title: Stories
+    url: /stories/
+  - title: Notes
+    url: /notes/
+  - title: Excerpts
+    url: /excerpts/
+
+# Every page uses the layout automatically, so .md files only need a front matter block.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - LICENSE
+
+plugins:
+  - jekyll-readme-index
